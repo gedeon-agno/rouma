@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasserie La Belle Époque</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #3c3b3d;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #6c757d;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #6c757d;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffc107;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .products, .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product, .contact-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover, .contact-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #3c3b3d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #ffc107;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .products, .contact-info {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Brasserie La Belle Époque</h1>
+    </header>
+
+    <nav>
+        <a href="#engagements">Nos Engagements</a>
+        <a href="#products">Nos Produits</a>
+        <a href="#visit">Visitez-Nous</a>
+        <a href="#contact">Contactez-Nous</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="engagements">
+            <h2>Nos Engagements</h2>
+            <p><strong>Qualité</strong> : Chaque étape de la production est minutieusement contrôlée pour garantir des boissons de la plus haute qualité. Nous sélectionnons avec soin les ingrédients, privilégiant les produits locaux et durables.</p>
+            <p><strong>Tradition</strong> : Inspirés par les méthodes ancestrales de brassage, nous allions techniques traditionnelles et innovations modernes pour créer des bières aux saveurs authentiques et inégalées.</p>
+            <p><strong>Innovation</strong> : Toujours à la recherche de nouvelles inspirations, nous expérimentons avec audace pour proposer des recettes originales qui surprendront et enchanteront tous les amateurs de bière.</p>
+        </section>
+
+        <section id="products">
+            <h2>Nos Produits</h2>
+            <div class="products">
+                <div class="product">
+                    <h3>Les Incontournables</h3>
+                    <p>Blonde, Ambrée, Brune, IPA</p>
+                </div>
+                <div class="product">
+                    <h3>Les Saisonnières</h3>
+                    <p>Bière de Noël, Bière d'Été, Bière de Printemps</p>
+                </div>
+                <div class="product">
+                    <h3>Les Éphémères</h3>
+                    <p>Recettes spéciales en édition limitée pour des expériences gustatives uniques.</p>
+                </div>
+                <div class="product">
+                    <h3>Cidres Artisanaux</h3>
+                    <p>Une gamme de cidres élaborés avec des pommes locales, alliant tradition et modernité.</p>
+                </div>
+                <div class="product">
+                    <h3>Limonades et Sodas Maison</h3>
+                    <p>Des boissons rafraîchissantes, naturellement sucrées et sans additifs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visit">
+            <h2>Visitez-Nous</h2>
+            <p>Venez découvrir notre brasserie et plongez au cœur de notre univers passionnant. Nous proposons des visites guidées pour vous faire découvrir le processus de brassage, ainsi que des séances de dégustation pour savourer nos créations dans une ambiance conviviale et chaleureuse.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Adresse</h3>
+                    <p>123 Rue de la Brasserie, <br>Ville, Code Postal</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Horaires d'Ouverture</h3>
+                    <p>Lundi - Vendredi : 10h00 - 18h00 <br>Samedi : 11h00 - 20h00 <br>Dimanche : Fermé</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-Nous</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Téléphone</h3>
+                    <p>01 23 45 67 89</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>contact@labelleepoque.fr</p>
+                </div>
+            </div>
+            <p>Suivez-nous sur les réseaux sociaux pour être informé de nos nouveautés et événements spéciaux :</p>
+            <p>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2024 La Belle Époque. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
